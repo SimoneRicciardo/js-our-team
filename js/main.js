@@ -35,13 +35,41 @@ const membriTeam = [
         'nome': 'Barbara Ramos',
         'ruolo': 'Graphic Designer',
         'foto': './img/barbara-ramos-graphic-designer.jpg'
-    },
+    }
     
 ];
-console.log(membriTeam);
 
-for (let chiave in membriTeam){
+console.log(membriTeam[0].nome);
 
-    console.log(chiave); 
-    console.log(membriTeam[chiave]); 
+const nomeComponentiTeam = [];
+
+for (let i = 0; i < membriTeam.length; i++){
+    const nomeuser = membriTeam[i].nome;
+    console.log(nomeuser);
+    nomeComponentiTeam.push(nomeuser);
 }
+
+console.log(nomeComponentiTeam);
+
+
+const ruoloComponentiTeam = [];
+
+for (let i = 0; i < membriTeam.length; i++){
+    const ruolouser = membriTeam[i].ruolo;
+    console.log(ruolouser);
+    ruoloComponentiTeam.push(ruolouser);
+}
+
+console.log(ruoloComponentiTeam);
+
+
+const fotoComponentiTeam = [];
+
+for (let i = 0; i < membriTeam.length; i++){
+    const fotouser = membriTeam[i].foto;
+    console.log(fotouser);
+    fotoComponentiTeam.push(fotouser);
+}
+
+console.log(fotoComponentiTeam);
+
