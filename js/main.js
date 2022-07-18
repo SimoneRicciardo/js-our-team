@@ -39,20 +39,24 @@ const membriTeam = [
     
 ];
 
-console.log(membriTeam[0].nome);
-
 const nomeComponentiTeam = [];
 
+
+let nameUser = document.getElementsByClassName('name');
 for (let i = 0; i < membriTeam.length; i++){
     const nomeuser = membriTeam[i].nome;
     console.log(nomeuser);
     nomeComponentiTeam.push(nomeuser);
+    nameUser[i].innerHTML = nomeuser;
 }
 
 console.log(nomeComponentiTeam);
 
 
-const ruoloComponentiTeam = [];
+
+
+
+/*const ruoloComponentiTeam = [];
 
 for (let i = 0; i < membriTeam.length; i++){
     const ruolouser = membriTeam[i].ruolo;
@@ -71,5 +75,16 @@ for (let i = 0; i < membriTeam.length; i++){
     fotoComponentiTeam.push(fotouser);
 }
 
-console.log(fotoComponentiTeam);
+console.log(fotoComponentiTeam);*/
 
+/*let nameUser = document.getElementById('name');
+
+nameUser.innerHTML = nomeComponentiTeam;*/
+
+/*let roleUser = document.getElementById('role');
+
+roleUser.innerHTML = ruoloComponentiTeam;
+
+let photoUser = document.getElementById('photo');
+
+photoUser.innerHTML = fotoComponentiTeam;*/
